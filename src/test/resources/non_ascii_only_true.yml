@@ -1,0 +1,3 @@
+type: url_encode
+column: url
+only_non_ascii: true
