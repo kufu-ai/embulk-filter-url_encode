@@ -71,7 +71,7 @@ public class UrlEncodeFilterPlugin
                                             }
                                             else {
                                                 if (ch == ' ') {
-                                                    sb.append('+');
+                                                    sb.append("%20");
                                                 }
                                                 else {
                                                     appendUrlEncoded(sb, ch);
@@ -83,7 +83,7 @@ public class UrlEncodeFilterPlugin
                                     }
                                     else {
                                         try {
-                                            url = URLEncoder.encode(url, "UTF-8");
+                                            url = URLEncoder.encode(url, "UTF-8").replace("+", "%20");
                                         }
                                         catch (UnsupportedEncodingException e) {
                                             // do nothing

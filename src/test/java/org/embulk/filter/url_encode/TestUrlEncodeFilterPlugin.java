@@ -75,7 +75,7 @@ public class TestUrlEncodeFilterPlugin
                 for (Page page : mockPageOutput.pages) {
                     pageReader.setPage(page);
 
-                    assertThat(pageReader.getString(0), is("%3Fq%3D+a%E3%81%82"));
+                    assertThat(pageReader.getString(0), is("%3Fq%3D%20a%E3%81%82"));
                 }
             }
         });
@@ -111,7 +111,7 @@ public class TestUrlEncodeFilterPlugin
                 for (Page page : mockPageOutput.pages) {
                     pageReader.setPage(page);
 
-                    assertThat(pageReader.getString(0), is("?q=+a%E3%81%82"));
+                    assertThat(pageReader.getString(0), is("?q=%20a%E3%81%82"));
                 }
             }
         });
