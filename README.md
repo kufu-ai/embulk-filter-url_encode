@@ -2,6 +2,8 @@
 
 The encode filter plugin encodes a column in the URL encoding format.
 
+[![Circle CI](https://circleci.com/gh/mwed/embulk-filter-url_encode.svg?style=svg)](https://circleci.com/gh/mwed/embulk-filter-url_encode)
+
 ## Overview
 
 * **Plugin type**: filter
