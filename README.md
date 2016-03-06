@@ -11,7 +11,7 @@ The encode filter plugin encodes a column in the URL encoding format.
 ## Configuration
 
 - **column**: A column to encode  (string, required)
-- **only_non_ascii**: When the option is true, the plugin does not Encode ASCII printable (string, default: `false`)
+- **only_non_ascii**: When the option is true, the plugin does not Encode ASCII printable (boolean, default: `false`)
 
 ## Example
 
